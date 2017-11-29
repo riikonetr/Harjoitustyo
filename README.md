@@ -1,2 +1,2 @@
 # Harjoitustyo
-Web-palvelinohjelmoinnin harjoitustyö
+Web-palvelinohjelmoinnin kurssia varten tehty harjoitustyö
