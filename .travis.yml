@@ -1,4 +1,4 @@
-ilanguage: java
+language: java
 before_script: cd Harjoitustyo
 
 deploy:
