@@ -42,9 +42,7 @@ public class Chat2010ApplicationTest {
     
     @Test
     public void loginOk() throws Exception {
-        //Nimen ja kanavan valinta testi
-        //mockMvc.perform(post("/login").param("name", "testi", "channel", "testiChannel")).andExpect(status().isOk());
-        assertTrue(true);
+        mockMvc.perform(post("/login").param("name", "testi").param("channel", "testiChannel")).andExpect(status().isOk());
     }
     
     @Test
