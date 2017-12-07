@@ -1,5 +1,0 @@
-- Avaa harjoitustyo-chat sovellus
-- Kirjoita itsellesi kanava (Channel) ja käyttäjä nimi (Name), jonka jälkeen klikkaa "Submit Query"
-- Olet siirtynyt valitsemallasi kanavalle, jossa näet valitun kanavan ja nimen sekä 
-siellä meineillä olevan keskustelun (default kanavalla näkyviin ilmestyy 20 sek välein automaattisia viestejä TJ:ltä)
-- Voit lähettää kanavalle viestejä kirjoittamalla kenttään ja klikkaamalla "Say!" 
