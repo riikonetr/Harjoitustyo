@@ -1,5 +1,5 @@
 # Chat ![Build Status][travis-ci]
-Harjoitustyörunko/Web-palvelinohjelmointi
+Web-palvelinohjelmointi/Harjoitustyo
 
 ## Lisenssi
 Projekti perustuu Helsingin yliopiston kurssin Web-palvelinohjelmointi [tehtävään 63 " Chat 2010"][T63]. 
