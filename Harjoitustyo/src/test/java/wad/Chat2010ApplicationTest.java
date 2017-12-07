@@ -1,6 +1,7 @@
 package wad;
 
-import static org.junit.Assert.assertTrue;
+import java.util.List;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -48,13 +49,14 @@ public class Chat2010ApplicationTest {
     @Test
     public void messageOk() throws Exception {
         Message message = new Message();
-        message.setUsername("Testaaja");
-        message.setChannel("default");
+        message.setUsername("testi");
+        message.setChannel("testiChannel");
         message.setContent("testi... 123");
         
         messageService.addMessage(message);
         
-        //Testaus että viesti meni perille
-        assertTrue(true);
+        List<Message> messages = messageService.getAllMessages();
+           
+        Assert.assertTrue(messages.contains(message));
     }
 }

@@ -5,6 +5,8 @@
         <meta charset="UTF-8" />
     </head>
     <body>
+        <h4 th:text="${channel}">Otsikko</h4>
+        <h5 th:text="${username}">Käyttäjä</h5>
         <div>
             <p><input type="text" name="message" id="message"/><input type="button" onclick="send();" value="Say!"/></p>
             <div id="messages">

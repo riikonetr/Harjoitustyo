@@ -1,6 +1,10 @@
 package wad.domain;
 
-public class Message {
+import javax.persistence.Entity;
+import org.springframework.data.jpa.domain.AbstractPersistable;
+
+@Entity
+public class Message extends AbstractPersistable<Long> {
 
     private String username;
     private String channel;
@@ -28,5 +32,10 @@ public class Message {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    @Override
+    public String toString() {
+        return username + ": " + content; //To change body of generated methods, choose Tools | Templates.
     }
 }
