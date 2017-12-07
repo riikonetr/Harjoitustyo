@@ -1,4 +1,4 @@
-# ExampleExercise ![Build Status][travis-ci]
+# Chat ![Build Status][travis-ci]
 Harjoitustyörunko/Web-palvelinohjelmointi
 
 ## Lisenssi
