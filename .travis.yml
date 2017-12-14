@@ -4,8 +4,7 @@ before_script: cd Harjoitustyo
 
 deploy:
   provider: heroku
-  api_key: 
-    secure: ad014586-c5c0-41e4-9dff-1f22b94b9933
+  api_key: ad014586-c5c0-41e4-9dff-1f22b94b9933
   app: 
     master: harjoitustyo-chat-tuotanto
     kehitys: harjoitustyo-chat-kehitys
