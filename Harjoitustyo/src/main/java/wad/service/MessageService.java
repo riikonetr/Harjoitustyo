@@ -31,7 +31,7 @@ public class MessageService {
     }
 
     public void addMessage(Message message) {
-        message.setMessagetime(new SimpleDateFormat("HH:mm:ss dd.MM.yyyy").format(new Date()));
+        message.setTimestamp(new SimpleDateFormat("HH:mm:ss dd.MM.yyyy").format(new Date()));
         String channel = message.getChannel();
         if(!channel.contains("(private)")) {
             messageRepository.save(message);
@@ -43,7 +43,7 @@ public class MessageService {
     @Scheduled(fixedDelay = 20000)
     public void send() {
         Message poliitikkoMessage = poliitikko.getMessage();
-        poliitikkoMessage.setMessagetime(new SimpleDateFormat("HH:mm:ss dd.MM.yyyy").format(new Date()));
+        poliitikkoMessage.setTimestamp(new SimpleDateFormat("HH:mm:ss dd.MM.yyyy").format(new Date()));
         this.template.convertAndSend("/channel/default", poliitikkoMessage);
     }
 }
