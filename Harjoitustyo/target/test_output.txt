@@ -1,0 +1,1 @@
+[{"className":"wad.Chat2010ApplicationTest","methodName":"noTests","pointNames":["63"],"status":"PASSED"}]
