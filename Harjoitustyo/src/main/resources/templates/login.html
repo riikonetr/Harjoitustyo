@@ -7,11 +7,11 @@
         <h2>Kirjaudu sisään</h2>
         <form method="POST" th:action="@{/authenticate}">
             <p>Käyttäjänimi: </p>
-            <input type="text" name="username" placeholder="Username" />
+            <input type="text" name="username" required="" placeholder="Username" />
             <p> Salasana: </p>
-            <input type="password" name="password" placeholder="password" />
+            <input type="password" name="password" required="" placeholder="password" />
             <p>&nbsp;</p>
-            <input type="submit" value="Kirjaudu" />
+            <input type="submit" name="submit" value="Kirjaudu" />
         </form>
         <p>
             <a th:href="@{/signup}">Luo tili</a>

@@ -24,7 +24,7 @@
         <div><span th:text="${chatname}">Käyttäjä</span>, valitse keskustelu kanava.</div>
         <form th:action="@{/chat}" method="POST">
             <p>Kanava:</p>
-            <input type="text" name="channel" value="default"/>
+            <input type="text" name="channel" required="" value="default"/>
             <p>Yksityinen <input type="checkbox" name="isPrivate" value="false"/></p>
             <p>&nbsp;</p>
             <input type="submit" value="Mene kanavalle"/>            

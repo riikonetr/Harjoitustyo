@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Profile;
 @Configuration
 @Profile("development")
 public class DevelopmentProfile {
-
+    
     @Bean
     public BasicDataSource dataSource() throws URISyntaxException {
         URI dbUri = new URI(System.getenv("DATABASE_URL"));
