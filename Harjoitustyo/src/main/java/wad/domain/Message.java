@@ -15,7 +15,7 @@ public class Message extends AbstractPersistable<Long> {
 
     private String chatname;
     private String avatar;
-    private String timestamp;
+    private String messagetime;
     private String channel;
     private String content;
     
@@ -35,12 +35,12 @@ public class Message extends AbstractPersistable<Long> {
         this.chatname = chatname;
     }
     
-    public String getTimestamp() {
-        return timestamp;
+    public String getMessagetime() {
+        return messagetime;
     }
 
-    public void setTimestamp(String timestamp) {
-        this.timestamp = timestamp;
+    public void setMessagetime(String messagetime) {
+        this.messagetime = messagetime;
     }
 
     public String getChannel() {
@@ -61,6 +61,6 @@ public class Message extends AbstractPersistable<Long> {
 
     @Override
     public String toString() {
-        return  chatname + "(" + timestamp + "): " + content;
+        return  chatname + " (" + messagetime + "): " + content;
     }
 }
