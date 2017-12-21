@@ -1,5 +1,4 @@
 language: java
-gem install travis
 before_script: cd Harjoitustyo
 
 deploy:
