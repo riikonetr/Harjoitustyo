@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="wad.Chat2010ApplicationTest" time="1.125" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="wad.Chat2010ApplicationTest" time="0.281" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk8\jre\bin"/>
@@ -64,8 +64,7 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase name="messageOk" classname="wad.Chat2010ApplicationTest" time="0.172"/>
-  <testcase name="authSuccessful" classname="wad.Chat2010ApplicationTest" time="0.796"/>
-  <testcase name="personOk" classname="wad.Chat2010ApplicationTest" time="0.125"/>
-  <testcase name="shouldSeeLoginPageOnAccessingChat" classname="wad.Chat2010ApplicationTest" time="0.016"/>
-  <testcase name="pageShouldNotBeDirectlyAccessible" classname="wad.Chat2010ApplicationTest" time="0.016"/>
+  <testcase name="loginOk" classname="wad.Chat2010ApplicationTest" time="0"/>
+  <testcase name="personOk" classname="wad.Chat2010ApplicationTest" time="0.109"/>
+  <testcase name="statusOk" classname="wad.Chat2010ApplicationTest" time="0"/>
 </testsuite>
