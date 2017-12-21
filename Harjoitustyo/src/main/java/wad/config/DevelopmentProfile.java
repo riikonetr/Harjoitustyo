@@ -5,12 +5,10 @@ import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 @Configuration
-@EnableWebSecurity
 @Profile("development")
-public class DevelopmentProfile {
+public class DevelopmentProfile extends SecurityConfiguration {
     
     @Bean
     public BasicDataSource dataSource() throws URISyntaxException {
