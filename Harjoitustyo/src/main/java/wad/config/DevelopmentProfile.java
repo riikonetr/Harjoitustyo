@@ -1,6 +1,4 @@
 package wad.config;
-import org.springframework.beans.factory.annotation.Autowired;
-package wad.config;
 import java.net.URI;
 import java.net.URISyntaxException;
 import org.apache.commons.dbcp2.BasicDataSource;
