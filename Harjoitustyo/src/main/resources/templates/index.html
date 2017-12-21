@@ -5,13 +5,29 @@
         <meta charset="UTF-8" />
     </head>
     <body>
-        <form th:action="@{/login}" method="POST">
-            <p>Channel:</p>
-            <input type="text" name="channel" value="default"/> 
-            <p>Name:</p>
-            <input type="text" name="name"/>
+        <p>
+            <a href="#" onclick="document.getElementById('logout-form').submit();">Kirjaudu ulos</a>
+        </p>
+        <form style="visibility: hidden" id ="logout-form" method="post" action="#" th:action="@{/logout}"><input type="submit" value="Logout"/></form>
+        
+        <form th:action="@{/change}" method="POST">
+            <select name="avatar">
+                <option value="NONE">--- Select ---</option>
+                <option value="images/clock.png">Kello</option>
+                <option value="images/people.png">Mies</option>
+                <option value="images/twitter-icon.png">Lintu</option>
+                <option value="images/wather-icon.png">Pilvi</option>
+            </select>
+            <input type="submit" value="Vaihda avatar"/>            
+        </form>
+
+        <div><span th:text="${chatname}">Käyttäjä</span>, valitse keskustelu kanava.</div>
+        <form th:action="@{/chat}" method="POST">
+            <p>Kanava:</p>
+            <input type="text" name="channel" required="" value="default"/>
+            <p>Yksityinen <input type="checkbox" name="isPrivate" value="false"/></p>
             <p>&nbsp;</p>
-            <input type="submit" name="Start chatting!"/>            
+            <input type="submit" value="Mene kanavalle"/>            
         </form>
     </body>
 </html>
