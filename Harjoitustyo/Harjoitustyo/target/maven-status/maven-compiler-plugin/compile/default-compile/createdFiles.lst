@@ -1,7 +1,0 @@
-wad\service\MessageService.class
-wad\controller\DefaultController.class
-wad\config\WebSocketConfiguration.class
-wad\controller\ChatController.class
-wad\service\Poliitikko.class
-wad\domain\Message.class
-wad\Chat2010Application.class
