@@ -1,4 +1,3 @@
 ## Toteuttamatta jääneet ominaisuudet
 
-CSS
-Optimointi
+CSS, Optimointi, Lisää testejä.
