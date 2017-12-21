@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Profile;
 
 @Configuration
 @Profile("development")
-public class DevelopmentProfile extends SecurityConfiguration {
+public class DevelopmentProfile {
     
     @Bean
     public BasicDataSource dataSource() throws URISyntaxException {
