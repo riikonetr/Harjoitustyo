@@ -1,5 +1,9 @@
 package wad.service;
 
+import java.sql.Timestamp;
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
@@ -27,14 +31,19 @@ public class MessageService {
     }
 
     public void addMessage(Message message) {
-        messageRepository.save(message);
-        this.template.convertAndSend("/channel/" + message.getChannel(), message);
+        message.setTimestamp(new SimpleDateFormat("HH:mm:ss dd.MM.yyyy").format(new Date()));
+        String channel = message.getChannel();
+        if(!channel.contains("(private)")) {
+            messageRepository.save(message);
+        }
+        this.template.convertAndSend("/channel/" + channel, message);
     }
 
     // lähettää viestejä 20 sekunnin välein default-kanavalle
     @Scheduled(fixedDelay = 20000)
     public void send() {
         Message poliitikkoMessage = poliitikko.getMessage();
+        poliitikkoMessage.setTimestamp(new SimpleDateFormat("HH:mm:ss dd.MM.yyyy").format(new Date()));
         this.template.convertAndSend("/channel/default", poliitikkoMessage);
     }
 }

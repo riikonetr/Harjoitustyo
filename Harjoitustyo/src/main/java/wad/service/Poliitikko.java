@@ -42,8 +42,9 @@ public class Poliitikko {
 
     public Message getMessage() {
         Message msg = new Message();
+        msg.setChatname("TS");
+        msg.setAvatar("images/wather-icon.png");
         msg.setContent(lentavatLauseet[new Random().nextInt(lentavatLauseet.length)]);
-        msg.setUsername("TS");
         return msg;
     }
 }
