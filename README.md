@@ -9,4 +9,4 @@ Alkuperäinen materiaali on lisensoitu Creative Commons BY-NC-SA-lisenssillä, j
 
 [T63]: http://web-palvelinohjelmointi.github.io/osa7.html#t-chat2010
 [cc-by-nc-sa]: https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License"
-[travis-ci]: https://travis-ci.org/riikonetr/Webpalvelinohjelmointi.svg?branch=master "https://travis-ci.org/riikonetr/Webpalvelinohjelmointi"
+[travis-ci]: https://travis-ci.org/riikonetr/Webpalvelinohjelmointi.svg?branch=kehitys "https://travis-ci.org/riikonetr/Webpalvelinohjelmointi"
