@@ -1,6 +1,7 @@
 ## Sovelluksen kuvaus
-Käynnistä sovellus Heroku:ssa ja valitse itsellesi kanava sekä nimi.
-Tämän jälkeen voit kirjoittaa valitsemallesi kanvalle valitsemallasi nimellä viestejä. 
+Käynnistä sovellus Heroku:ssa ja luo itsellese käyttäjätili.
+Tämän jälkeen voit kirjautua sisään ja valita kanavan (voi olla yksityinen) tai vaihtaa avatarin.
+Kanvalla voit kirjoittaa valitsemallasi chatnimellä viestejä. 
 
 ## Käytetyt tekniikat
 * REST
@@ -8,4 +9,4 @@ Tämän jälkeen voit kirjoittaa valitsemallesi kanvalle valitsemallasi nimellä
 * Spring Framework
 
 ## Käyttötapauskuvaukset
-1. Käyttötapaus 1: KT1.md
+Käyttötapaukset 1-3: KT.md

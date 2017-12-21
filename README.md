@@ -2,7 +2,7 @@
 Web-palvelinohjelmointi/Harjoitustyo
 
 ## Lisenssi
-Projekti perustuu Helsingin yliopiston kurssin Web-palvelinohjelmointi [tehtävään 63 " Chat 2010"][T63]. 
+Projekti perustuu Helsingin yliopiston kurssin Web-palvelinohjelmointi [tehtävään 63 "Chat 2010"][T63]. 
 
 ![Creative Commons License][cc-by-nc-sa]
 Alkuperäinen materiaali on lisensoitu Creative Commons BY-NC-SA-lisenssillä, joten myös tämä muunneltu versio käyttää samaa Creative Commons BY-NC-SA lisenssiä.
